@@ -6,7 +6,6 @@ This is a software allows you slide to share your objects to nearby devices thru
 
 
 
-
 ********************************************************************
 Design document:
 
