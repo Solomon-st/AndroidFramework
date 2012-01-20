@@ -1,10 +1,12 @@
 package com.sol.ss.heart;
 
-
 public class Heart {
     
     public void heartBeat() {
-        udpate();
+        int updateResult = udpate();
+        if (updateResult == 2) {
+            
+        }
     }
     
     private int udpate() {
