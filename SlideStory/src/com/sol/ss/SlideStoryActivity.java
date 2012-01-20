@@ -2,39 +2,31 @@ package com.sol.ss;
 
 import java.io.File;
 
-import com.kaloer.filepicker.FilePickerActivity;
-
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.Canvas;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+
+import com.kaloer.filepicker.FilePickerActivity;
 
 public class SlideStoryActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new background(this));
-        initDevices();
+        setContentView(new Background(this));
     }
     
-    void initDevices() {
-        
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //TODO start beat
     }
     
-    class background extends View {
-        
-        public background(Context context) {
-            super(context);
-        }
-        
-        @Override
-        protected void onDraw(Canvas canvas) {
-            super.onDraw(canvas);
-        }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        //TODO suspend beat
     }
     
     @Override
@@ -60,6 +52,11 @@ public class SlideStoryActivity extends Activity {
     public void chooseFile() {
         Intent intent = new Intent(this, FilePickerActivity.class);
         startActivityForResult(intent, REQUEST_PICK_FILE);
+        placeNewItem();
+    }
+    
+    private void placeNewItem() {
+        
     }
     
     @Override
