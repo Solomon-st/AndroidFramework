@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kaloer.filepicker;
+package com.sol.ss.etc;
 
 import java.io.File;
 import java.io.FilenameFilter;

@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.kaloer.filepicker.FilePickerActivity;
+import com.sol.ss.etc.FilePickerActivity;
 
 public class SlideStoryActivity extends Activity {
     @Override
