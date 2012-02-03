@@ -1,6 +1,6 @@
 package com.sol.ss.heart;
 
-public class Beat extends Thread {
+public class Beat implements Runnable {
     long  pulse = 1000 / 60;
     Heart heart;
     
@@ -10,7 +10,6 @@ public class Beat extends Thread {
     
     @Override
     public void run() {
-        super.run();
         try {
             sendUpdateMessage();
             Thread.sleep(pulse);

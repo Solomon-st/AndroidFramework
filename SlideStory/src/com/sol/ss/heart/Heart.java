@@ -23,4 +23,10 @@ public class Heart {
     private int updateItems() {
         return 1;
     }
+    
+    public static final int mainMenu = 0;
+    public static final int setting  = 1;
+    public static final int help     = 2;
+    public static final int gameOver = 3;
+    public static final int ongoing  = 4;
 }
